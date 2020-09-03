@@ -5,7 +5,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 Esta aplicaion se desarrollo en reactjs, la cual tiene como proposito agregar tareas conociendo su creador y la informacion general
 
 despliegue en heroku  [en este enlace a heroku ](https://taskapp-eiti.herokuapp.com/)
-despleigue en Azure   [en este enlace a Azure ] (https://taskmanager-ieti.azurewebsites.net/)
+
+despleigue en Azure   [en este enlace a Azure ](https://taskmanager-ieti.azurewebsites.net/)
 
 	credenciales:
 	user : prueba@mail.com
