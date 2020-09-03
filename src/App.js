@@ -39,11 +39,9 @@ class App extends Component {
               
 
                     <br />
-                    <br />
-                       
+                    <br />                
                         <Route exact path="/" component={view} />
-                    
-                 
+                     
                      </Router>
             </div>
         );
