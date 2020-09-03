@@ -1,5 +1,16 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## TASK MANAGER IETI
+
+Esta aplicaion se desarrollo en reactjs, la cual tiene como proposito agregar tareas conociendo su creador y la informacion general
+
+despliegue en heroku  [en este enlace a heroku ](https://taskapp-eiti.herokuapp.com/)
+despleigue en Azure   [en este enlace a Azure ] (https://taskmanager-ieti.azurewebsites.net/)
+
+	credenciales:
+	user : prueba@mail.com
+	clave : prueba1234
+
 ## Available Scripts
 
 In the project directory, you can run:
