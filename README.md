@@ -1,6 +1,6 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## TASK MANAGER IETI
+## TASK MANAGER IETI PARTE 1 & 2
 
 Esta aplicaion se desarrollo en reactjs, la cual tiene como proposito agregar tareas conociendo su creador y la informacion general
 
