@@ -1,23 +1,25 @@
 import React, {Component} from 'react';
 
-import { BrowserRouter as Router, Link, Route, Redirect } from 'react-router-dom'
+import { BrowserRouter as Router, Link, Route, Redirect ,Switch} from 'react-router-dom'
 
 import Login from "./components/Login";
 import logo from './logo.svg';
 import TaskApp from './components/TaskApp';
+import AddTask from "./components/AddTask";
 
-
+localStorage.setItem("loging", false);
 localStorage.setItem("mail", "prueba@gmail.com");
 localStorage.setItem("password", "prueba1234");
-
+localStorage.setItem("items", []);
 
 class App extends Component {
-    
+
     constructor(props) {
-    
         super(props);
-        this.state = { isLogged: false };
-        this.handleClick = this.handleClick.bind(this);
+        this.state = {
+            isLogged: false
+            };
+        this.handleClick = this.handleClick.bind(this); 
     }
 
     render() {
@@ -31,24 +33,27 @@ class App extends Component {
         );
 
         const view = this.state.isLogged ? TodoAppView : LoginView
-        
+        console.log(" login " + this.state.isLogged);
         return (
-            <div className="App">
+                <div className="App">
 
-            <Router>
-              
-
-                    <br />
-                    <br />                
+                    <Router>
+                   
+                            <br />
+                            <br />
                         <Route exact path="/" component={view} />
-                     
+                        <Route path="/newTask">
+                                <AddTask />
+                            </Route> 
                      </Router>
-            </div>
+                </div>
+
         );
     
     }
 
     handleClick(e) {
+        localStorage.setItem("login", true);
         this.setState({ isLogged: true })
     }
 
